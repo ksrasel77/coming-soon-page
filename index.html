@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowAI - Next-Gen AI Tools Coming Soon</title>
+  <meta name="description" content="Join GlowAI waitlist for revolutionary AI-powered productivity tools. From VPN to skin scanner, we're building the future.">
+  
+  <!-- Favicon Package -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6e45e2">
+  <meta name="msapplication-TileColor" content="#6e45e2">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Social Media Meta -->
+  <meta property="og:title" content="GlowAI - AI Tools Coming Soon">
+  <meta property="og:description" content="Next-generation AI solutions for productivity and security.">
+  <meta property="og:image" content="https://yourgithubusername.github.io/glowai-preview.jpg">
+  <meta property="og:url" content="https://yourgithubusername.github.io">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .coming-soon-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 3rem;
+      text-align: center;
+      background: linear-gradient(135deg, #f5f7ff 0%, #e8f4ff 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(43, 0, 255, 0.1);
+      border: 1px solid rgba(43, 0, 255, 0.15);
+    }
+
+    /* Animation Container */
+    .animation-container {
+      margin: 0 auto 2rem;
+      height: 120px;
+      position: relative;
+    }
+
+    .starburst {
+      font-size: 5rem;
+      animation: 
+        bounce 1.5s ease infinite alternate,
+        colorCycle 8s linear infinite;
+      filter: drop-shadow(0 0 8px rgba(255,215,0,0.6));
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+    }
+
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .particle {
+      position: absolute;
+      font-size: 1.2rem;
+      animation: float 4s ease-in-out infinite;
+      opacity: 0.8;
+    }
+
+    /* Progress Elements */
+    .progress-bar {
+      height: 8px;
+      background: #e0e0ff;
+      border-radius: 10px;
+      margin: 2rem 0;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 75%;
+      background: linear-gradient(90deg, #2b00ff 0%, #8a2be2 100%);
+      border-radius: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    /* Buttons */
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: linear-gradient(90deg, #2b00ff 0%, #6a00f4 100%);
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 1rem 0;
+      box-shadow: 0 4px 15px rgba(43, 0, 255, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(43, 0, 255, 0.4);
+    }
+
+    .playstore-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      color: #1a1a1a;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4);
+      margin: 1rem 0;
+      transition: all 0.3s;
+    }
+
+    .playstore-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255, 165, 0, 0.6);
+    }
+
+    /* Text Elements */
+    h1, h2 {
+      color: #2b00ff;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .privacy-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-links a {
+      color: #2b00ff;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #6a00f4;
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0% { transform: scale(0.9) rotate(-10deg); }
+      100% { transform: scale(1.1) rotate(10deg); }
+    }
+
+    @keyframes colorCycle {
+      0% { color: #FF3366; }
+      25% { color: #FFD166; }
+      50% { color: #06D6A0; }
+      75% { color: #118AB2; }
+      100% { color: #FF3366; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.9; }
+      50% { opacity: 1; }
+      100% { opacity: 0.9; }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .coming-soon-container {
+        padding: 2rem;
+        margin: 1rem;
+        max-width: 90%;
+      }
+      
+      .animation-container {
+        height: 100px;
+      }
+      
+      .starburst {
+        font-size: 4rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      .cta-button, .playstore-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="coming-soon-container">
+    <!-- Animated Starburst -->
+    <div class="animation-container">
+      <div class="starburst">🎉</div>
+      <div class="particles">
+        <span class="particle" style="top: 10%; left: 20%; animation-delay: 0s;">✨</span>
+        <span class="particle" style="top: 70%; left: 15%; animation-delay: 0.5s;">🌟</span>
+        <span class="particle" style="top: 20%; left: 80%; animation-delay: 1s;">⭐</span>
+        <span class="particle" style="top: 65%; left: 75%; animation-delay: 1.5s;">🔆</span>
+      </div>
+    </div>
+    
+    <h2>Fueling Up for Launch!</h2>
+    <p>
+      We're fine tuning our app to deliver <strong style="color:#2b00ff">fast</strong>, 
+      <strong style="color:#2b00ff">intelligent</strong> and <strong style="color:#2b00ff">secure</strong> performance.
+      Meanwhile, feel free to check out my live educational app <strong>BrightBee</strong>.
+    </p>
+    
+    <!-- Play Store Button -->
+    <a href="https://play.google.com/store/apps/details?id=com.brightbee.learnighub" 
+       class="playstore-btn" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      <i class="fab fa-google-play"></i> Get BrightBee on Play Store
+    </a>
+    
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    
+    <!-- Waitlist Button -->
+    <p style="margin: 1.5rem 0 0.5rem;">
+      Want early access? Join the waitlist!
+    </p>
+    <a href="https://forms.gle/oSgQAACt29pK5Ut79" 
+       class="cta-button" 
+       target="_blank"
+       rel="noopener noreferrer"
+       id="waitlist-button">
+      <i class="fas fa-envelope"></i> Join the waitlist
+    </a>
+    
+    <p class="privacy-note">
+      <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe anytime.
+    </p>
+    
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.instagram.com/ks_rasel_hossain?igsh=ZXBwMm5mYzhmYnpk" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/share/1EyLgcvVUA/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sheikh-rasel-7a498228b" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    // Waitlist button interaction
+    document.getElementById('waitlist-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      Swal.fire({
+        title: 'Join GlowAI Waitlist',
+        html: `You'll be redirected to our secure signup form.<br><small>Takes less than 30 seconds!</small>`,
+        icon: 'info',
+        showCancelButton: true,
+        confirmButtonColor: '#6e45e2',
+        cancelButtonColor: '#ff7e5f',
+        confirmButtonText: 'Continue <i class="fas fa-arrow-right"></i>',
+        cancelButtonText: 'Not Now',
+        backdrop: `rgba(110,69,226,0.1)`
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.open(this.href, '_blank');
+          // Optional: Track conversion
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'waitlist_signup', {
+              'event_category': 'engagement'
+            });
+          }
+        }
+      });
+    });
+  </script>
+  
+  <!-- Optional Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</body>
+</html>
